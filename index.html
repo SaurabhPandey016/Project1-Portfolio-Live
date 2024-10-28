@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh Pandey Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Creating Header Content & Navbar -->
+      <section class="navigation-section" id="home-section">
+        <header>
+          <div class="header-section">
+            <a href="" class="nav"><span>Saurabh Pandey</span></a>
+            <ul class="nav-link">
+              <!-- Isme agr li use krte to uske dots ko hatate -- -->
+              <!-- list-style-type : none; krke -->
+              <li><a href="#home-section" class="hover-effect">Home</a></li>
+              <li><a href="#about-section" class="hover-effect">About</a></li>
+              <li><a href="#resume-section" class="hover-effect">Resume</a></li>
+              <li><a href="#project-section" class="hover-effect">Projects</a></li>
+              <li><a href="#contact-section" class="hover-effect">Contact</a></li>
+            </ul>
+
+            <!-- Menu Button -->
+            <div class="menu-icon">
+              <img
+                src="images/menu-fries-svgrepo-com.svg"
+                alt=""
+                style="
+                  height: 1.8rem;
+                  width: 1.8rem;
+                  background-color: white;
+                  border-radius: 0.3rem;
+                "
+                class="menu-check"
+              />
+              <ul class="links">
+                <img
+                  src="images/twitter.png"
+                  alt="cross-sign"
+                  class="cross-sign"
+                />
+                <li><a href="#home-section" class="hover-effect">Home</a></li>
+                <li><a href="#about-section" class="hover-effect">About</a></li>
+                <li><a href="#resume-section" class="hover-effect">Resume</a></li>
+                <li><a href="#project-section" class="hover-effect">Projects</a></li>
+                <li><a href="#contact-section" class="hover-effect">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <!-- Creating Home Section -->
+      <section class="home-section" >
+        <div class="home-content">
+          <div
+            class="greeting"
+            style="margin-bottom: 1.7rem; margin-top: 0.3rem"
+          >
+            <p class="greet-text">HELLO!</p>
+          </div>
+
+          <div class="heading-name" style="margin-bottom: 1.9rem">
+            <p class="head-para">
+              <span class="head-span">I'm</span> Saurabh Pandey
+            </p>
+          </div>
+
+          <div class="auto-type" style="margin-bottom: 1.9rem">
+            <span class="span-type"></span>
+          </div>
+
+          <div class="work-profile">
+            <p class="work-text">Front-end Developer</p>
+          </div>
+
+          <div class="profile-buttons">
+            <div class="profile-button1">
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/saurabhpandey-/"
+                  target="_blank"
+                  >LINKEDIN</a
+                >
+              </p>
+            </div>
+            <div class="profile-button2">
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/saurabhpandey-/"
+                  target="_blank"
+                  >MY WORKS</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="homeImg">
+          <img
+            src="images/about.png "
+            alt="About"
+            class="characterImage"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="about-section" id="about-section">
+        <div class="left-div">
+          <div class="upper-div">
+            <img src="images/about-me.png" alt="about-me" class="about-image" />
+            <div class="intro-text">
+              <p>Name: Saurabh Pandey</p>
+              <p>Job Role: Software Engineer</p>
+              <p>Experience: 6 Months</p>
+              <p>Address: Madhya Pradesh, India</p>
+            </div>
+          </div>
+
+          <div class="left-lower-div">
+            <p style="font-size: 1.05rem">Skills</p>
+            <div class="skill-section">
+              <div class="skill1">
+                <p>C++ 85%</p>
+                <div class="progress-bar">
+                  <div class="raise-bar"></div>
+                </div>
+              </div>
+
+              <div class="skill2">
+                <p>HTML 80%</p>
+                <div class="progress-bar">
+                  <div class="raise-bar"></div>
+                </div>
+              </div>
+
+              <div class="skill3">
+                <p>CSS 75%</p>
+                <div class="progress-bar">
+                  <div class="raise-bar"></div>
+                </div>
+              </div>
+
+              <div class="skill4">
+                <p>Javascript 70%</p>
+                <div class="progress-bar">
+                  <div class="raise-bar"></div>
+                </div>
+              </div>
+
+              <div class="skill5">
+                <p>Data Structures and Algorithms 75%</p>
+                <div class="progress-bar">
+                  <div class="raise-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-div">
+          <div class="right-upper-text">
+            <p class="about-me-text">About Me</p>
+            <span class="float-about">About</span>
+            <p class="about-para">
+              With over 1.5 years of comprehensive experience in the field of
+              data science & analytics, accompanied by a bachelor's degree in
+              engineering. Proficient in data analysis, statistical analysis,
+              hypothesis testing, customer behaviour analysis, & machine
+              learning. Demonstrated success in leading impactful projects and
+              providing effective mentorship.
+            </p>
+          </div>
+          <div class="right-lower-text">
+            <ul
+              class="list-ul"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 0.7rem;
+                list-style-type: none;
+              "
+            >
+              <li>
+                <span class="text">Profile:</span>
+                <span>Software Engineering & Full Stack Development</span>
+              </li>
+              <li>
+                <span class="text">Domain: </span>
+                <span>Engineering, Ecommerce, BFSI & Digital Marketing</span>
+              </li>
+              <li>
+                <span class="text">Education:</span>
+                <span>Bachelor of Technology</span>
+              </li>
+              <li>
+                <span class="text">Language:</span>
+                <span>English, Hindi</span>
+              </li>
+              <li>
+                <span class="text">Other skills:</span>
+                <span
+                  >Cloud, PySpark, Excel, Git, JIRA, Google Analytics &
+                  SEO</span
+                >
+              </li>
+              <li>
+                <span class="text">Interest:</span>
+                <span>Travelling, Workout, PhotoGraphy, Singing</span>
+              </li>
+              <li>
+                <span class="text">Tools:</span>
+                <span>Microsoft Power BI, Looker & Tableau</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-count-div">
+        <div class="project-count">
+          <p class="project-count-para">
+            <span class="project-count-span">5 +</span> Projects completed
+          </p>
+        </div>
+        <div class="project-count-button">LINKEDIN</div>
+      </div>
+
+      <section class="resume-section" id="resume-section">
+
+        <div class="resume-content">
+          <p class="resume-text">Resume</p>
+          <span class="resume-float">Resume</span>
+        </div>
+        <div class="resume-para">
+          <p>
+            Seasoned Senior Data Analyst with 1.5+ years of experience driving
+            business strategies through data-driven insights. Proven expertise
+            in data science, statistical analysis, machine learning algorithms
+            and project management.
+          </p>
+        </div>
+
+        <div class="experience-section">
+
+          <!-- first part -->
+          <div class="experience-text">
+            <p>Experience</p>
+          </div>
+          <div class="experience-line"></div>
+
+          <!-- second part -->
+          <div class="experience-content">
+            <div class="experience-left-content">
+              <div class="experience-upper-content">
+                <p class="text1">2023-Present</p>
+                <p class="text2">Freelance Developer</p>
+                
+              </div>
+              <div class="experience-bottom-content">
+                <ul>
+                  <p class="experience-ul-para">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.</p>
+                  <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+                  <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+                  <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-right-content">
+              <div class="experience-upper-content">
+                <p class="text1">Career Transition</p>
+                <p class="text2">Software Engineering</p>
+                
+              </div>
+              <div class="experience-bottom-content">
+                <ul>
+                  <p class="experience-ul-para">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.</p>
+                  <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+                  <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+                  <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third part -->
+          <div class="education-content">
+            <div class="experience-text">
+              <p>Education</p>
+            </div>
+            <div class="experience-line"></div>
+
+            
+            <div class="education-content-lower">
+              <div class="education-left-content">
+                <div class="education-upper-content">
+                  <p class="text1">2018-2022</p>
+                  <p class="text2">Bachelor of Technology</p>
+                  <p class="text3">Aks university</p>
+                  <p class="text4">Grade: First Class.</p>
+                  
+                </div>
+              </div>
+              <div class="education-right-content">
+                  <div class="education-upper-content">
+                    <p class="text1">2017-2018</p>
+                    <p class="text2">Higher Secondary School</p>
+                    <p class="text3">Excellence No.1 Rewa</p>
+
+                    <p class="text4">Grade: First Class.</p>
+                    
+                  </div>
+              </div>
+            </div>
+
+            <div class="education-lower-button">
+              <div class="education-button">
+                Join Telegram
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="project-section" id="project-section">
+
+        <div class="project-content">
+          <p class="project-text">Projects</p>
+          <p class="project-text-para">Below are the sample of projects using HTML, CSS & Javascript</p>
+          <span class="project-float">Projects</span>
+        </div>
+
+        <div class="project">
+          <div class="project-matter1">
+
+            <div class="project1">
+              <div class="project-image"><img src="images/proj_1.jpg" alt="project-image" class="project-image">
+              </div>
+              <div class="project-description">
+                <span class="project-description-para">Digital Music Store Data Analysis using SQL</span>
+              </div>
+              <div class="project-para">
+                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+              </div>
+            </div>
+  
+            <div class="project1">
+              <div class="project-image"><img src="images/proj_2.jpg" alt="project-image" class="project-image">
+              </div>
+              <div class="project-description">
+                <span class="project-description-para">Digital Music Store Data Analysis using SQL</span>
+              </div>
+              <div class="project-para">
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+  
+            <div class="project1">
+              <div class="project-image"><img src="images/proj_3.jpg" alt="project-image" class="project-image">
+              </div>
+              <div class="project-description">
+                <span class="project-description-para">Digital Music Store Data Analysis using SQL</span>
+              </div>
+              <div class="project-para">
+                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+
+          <div class="project-matter2">
+            <div class="project1">
+              <div class="project-image"><img src="images/proj_4.jpg" alt="project-image" class="project-image">
+              </div>
+              <div class="project-description">
+                <span class="project-description-para">Digital Music Store Data Analysis using SQL</span>
+              </div>
+              <div class="project-para-">
+                <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+              </div>
+            </div>
+  
+            <div class="project1">
+              <div class="project-image"><img src="images/proj_5.jpg" alt="project-image" class="project-image">
+              </div>
+              <div class="project-description">
+                <span class="project-description-para">Digital Music Store Data Analysis using SQL</span>
+              </div>
+              <div class="project-para">
+                <p>Developed a ML model to give various recommendations of financial products & services on target customer groups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achieve">
+          <div class="achievement-content">
+           <div class="box1"  >
+              <p class="box1-para">20</p>
+              <span class="box1-span">Achievements</span>
+            </div>
+            <div class="box1">
+              <p class="box1-para">5</p>
+              <span class="box1-span">Projects</span>
+            </div>
+            <div class="box1">
+              <p class="box1-para">1000+</p>
+              <span class="box1-span">Students Mentored</span>
+            </div>
+            <div class="box1">
+              <p class="box1-para">500</p>
+              <span class="box1-span">Cups of Coffee</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-section">
+    
+          <div class="achivement-body">
+            <div class="achievement-text">
+              <h2 class="achievement-text1">More projects on <span class="achievement-text2">Github</span></h2>
+              <h4 class="achievement-text-para">I love to solve business problems & uncover hidden data stories</h4>
+            </div>
+  
+            <div class="achievement-button">
+              GITHUB
+            </div>
+          </div>
+          
+
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact-section">
+
+        <div class="contact-content">
+          <p class="contact-text">Contact Me</p>
+          <p class="project-text-para">Below are the details to reach me out</p>
+          <span class="contact-float">Contact</span>
+        </div>
+
+        <div class="contact-buttons">
+
+          <div class="button1">
+            <div class="button-box">
+              <div class="button">
+                <img src="images/placeholder.png" alt="" class="button-svg">
+              </div>
+              <p class="button-para">Address</p>
+              <p  class="button-text">Rewa, Madhya Pradesh</p>
+            </div>
+          </div>
+
+          <div class="button1">
+            <div class="button-box">
+              <div class="button">
+                <img src="images/telephone.png" alt="" class="button-svg">
+              </div>
+              <p class="button-para">Contact Number</p>
+              <a class="button-text" href="tel:+918720026790" rel="noopener noreferrer">+918720026790</a>
+            </div>
+          </div>
+
+          <div class="button1">
+            <div class="button-box">
+              <div class="button">
+                <img src="images/send.png" alt="" class="button-svg">
+              </div>
+              <p class="button-para">Email</p>
+              <a class="button-text" href="mailto:wesaysaurabh@gmail.com">wesaysaurabh@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="button1">
+            <div class="button-box">
+              <div class="button">
+                <img src="images/internet.png" alt="" class="button-svg">
+              </div>
+              <p class="button-para">Resume</p>
+              <p class="button-text">Download Resume</p>
+            </div>
+          </div>
+    
+          
+        </div>
+
+      </section>
+
+      <section class="footer-section">
+
+        <div class="social-section">
+          <div class="social-text">
+            Find me on
+          </div>
+          <div class="social-links">
+            <!-- <div class="link1"><img class="link-logo" src="images//Linkedin-Logo-PNG-Pic.png" alt=""></div>
+            <div class="link1"><img class="link-logo" src="images/instagram-svgrepo-com.svg" alt=""></div>
+            <div class="link1"><img class="link-logo" src="images/twitter.png" alt=""></div> -->
+
+            
+              <li class="link1"> <a href="https://www.linkedin.com/in/saurabhpandey-/" target="_blank" class="link1-a"><img src="images/linkedin-161-svgrepo-com.svg" alt="" class="link-logo"></a> </li>
+              <li class="link1"> <a href="https://www.instagram.com/mr._bunny_/" target="_blank" class="link1-a"><img src="images/instagram-svgrepo-com.svg" alt="" class="link-logo"></a> </li>
+              <li class="link1"> <a href="https://github.com/SaurabhPandey016" target="_blank" class="link1-a"><img src="images/github-svgrepo-com.svg" alt="" class="link-logo"></a> </li>
+              <li class="link1"> <a href="https://x.com/Saurabh_Pandey_" target="_blank" class="link1-a"><img src="images/twitter-154-svgrepo-com.svg" alt="" class="link-logo"></a> </li>
+            
+          </div>
+        </div>
+
+        <div class="copyright-section">
+          <p class="copyright-text">Copyright ©2024 All rights reserved | Made with ❣️ by Saurabh Pandey</p>
+        </div>
+
+      </section>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
