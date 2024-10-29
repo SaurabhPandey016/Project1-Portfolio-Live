@@ -49,13 +49,26 @@ li
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
     margin-bottom: 6.2rem;
+    height: 4rem;
     align-items: center;
-    top: 0;
-    /* position: relative; */
+    position: fixed;
+    width: 100vw;
+    background-color: var(--black);
+    transition: 0.4s;
+    z-index: 10000;
+    
+}
 
+.nav-link
+{
+    position: relative;
+    left: 465px;
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
 }
 
 .nav {
@@ -170,13 +183,7 @@ li
 
 
 
-.nav-link
-{
-    
-    display: flex;
-    flex-direction: row;
-    gap: 2.3rem;
-}
+
 
 
 .nav-link a {
@@ -229,6 +236,7 @@ li
     justify-content: space-between;
     color: var(--white);
     gap: 1.3rem;
+    padding-top: 6rem;
 }
 
 
