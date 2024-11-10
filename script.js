@@ -4,7 +4,7 @@ const list = document.querySelector('.links');
 const barRemove = document.querySelector('.cross-sign');
 const spanText = document.querySelector(".span-type");
 const headScroll = document.querySelectorAll(".header-section");
-console.log(headScroll);
+
 
 // write an auto type function which will display Several cards;
 // agr ek b space daale tm mto sb khb hojyega;
