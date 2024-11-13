@@ -6,6 +6,7 @@ const spanText = document.querySelector(".span-type");
 const headScroll = document.querySelectorAll(".header-section");
 
 
+
 // write an auto type function which will display Several cards;
 // agr ek b space daale tm mto sb khb hojyega;
 const typeList = ["Web-Developer","Frontend-Engineer", "Freelancer",  ];
@@ -114,6 +115,13 @@ menuClick.addEventListener('click', function() {
 
 barRemove.addEventListener('click', function() {
     showBar.classList.remove('show');
+});
+
+// adding Scroll Navigation on header
+window.addEventListener('scroll', ()=> {
+    if(top > 200) {
+        
+    }
 });
 
 

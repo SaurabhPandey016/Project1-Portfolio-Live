@@ -52,21 +52,39 @@ li
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     /* margin-bottom: 6.2rem; */
-    height: 4rem;
+    height: 4.5rem;
     align-items: center;
     position: fixed;
     width: 93vw;
     margin: 0 auto;
     background-color: var(--black);
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     z-index: 10000;
     justify-content:space-between;
     padding-right: 2.1rem;
+    animation: scrollDown 0.2s forwards;
+}
+
+@keyframes scrollDown {
+
+    from {
+        top: -250px;
+    }
+    to{
+        top: 0;
+    }
+    
+}
+
+.header-section
+{
+    height: 4.4rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-check
 {
-    position: relative;
+    /* position: relative; */
     /* left: 40rem; */
     /* right: -1rem; */
     height: 1.8rem;
@@ -77,7 +95,7 @@ li
 
 .nav-link
 {
-    position: relative;
+    /* position: relative; */
     /* left:25rem; */
     display: flex;
     flex-direction: row;
@@ -96,14 +114,14 @@ li
 .links
 {
     position: fixed;
-    width: 24%;
+    width: 26%;
     height: 100vh;
     top: 0;
     right: 0;
     background-color:rgba(0, 0, 0, 0.53);
     backdrop-filter: blur(6px);
     z-index: 999;
-    box-shadow: -10px 0px 10px -5px rgba(174, 168, 168, 0.694);
+    box-shadow: -7px 0px 10px -5px rgba(174, 168, 168, 0.694);
 
     display: none ;
     flex-direction: column;
@@ -220,21 +238,34 @@ li
     }
 
     .characterImage {
-        background: url(images/bg_1.png) no no-repeat cover;
-        /* opacity: 0.7; */
-       
+       display: none;  
     }
     .homeImg
     {
-        /* width: 100%;
-        height: 100%;
-        position: absolute; */
+        /* position: relative; */
+    }
+
+    .home-section
+    {
+        background-image: url('images/about-me.png');
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        width: 100%;
+        z-index: -9999;
+        margin-top: 7rem;
+        padding-top: 7rem;
+        background-position: right left;
+        background-size: contain;
+
+        
+
+    }
+
+    .about-section {
+        padding-top: 6rem;
     }
 
 }
-
-
-
 
 
 
