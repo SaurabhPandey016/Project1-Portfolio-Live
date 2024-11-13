@@ -256,13 +256,31 @@ li
         padding-top: 7rem;
         background-position: right left;
         background-size: contain;
-
+        opacity: 90%;
         
+    }
 
+    .home-content {
+        align-items: center;
+        width: 100%;
+        gap: 0rem;
+        text-align: center;
+        
     }
 
     .about-section {
         padding-top: 6rem;
+    }
+
+    .work-text {
+        color: var(--primary-color);
+        font-weight: 700;
+    }
+
+    .span-type
+    {
+        color: var(--primary-color);
+        font-weight: 600;
     }
 
 }
@@ -283,7 +301,7 @@ li
     flex-direction: row;
     justify-content: space-between;
     color: var(--white);
-    gap: 1.3rem;
+    /* gap: 1.3rem; */
     padding-top: 6rem;
 }
 
@@ -297,6 +315,7 @@ li
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+    width: 100%;
     
 }
 
