@@ -84,7 +84,7 @@ li
 
 .menu-check
 {
-    /* position: relative; */
+    position: relative;
     /* left: 40rem; */
     /* right: -1rem; */
     height: 1.8rem;
@@ -158,8 +158,9 @@ li
 }
     
 .menu-icon {
-    /* position: relative; */
+    position: relative;
     display: none;
+
 }
 
 
@@ -252,8 +253,8 @@ li
         /* background-repeat: no-repeat; */
         width: 100%;
         z-index: -9999;
-        margin-top: 7rem;
-        padding-top: 7rem;
+        margin-top: 10rem;
+        padding-top: 10rem;
         background-position: right left;
         background-size: contain;
         opacity: 90%;
@@ -916,14 +917,37 @@ li
     display: flex;
     flex-direction: column;
     gap: 1rem; 
+    align-items: center;
 }
 
 .project-matter1
 {
     max-width: min-content;
     display: flex;
-    flex-direction: row;
+    
     gap:1.8rem;
+}
+
+@media (max-width:1025px) {
+
+    .project-matter1 {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-matter2 {
+        padding-bottom: 27rem;  
+        flex-wrap: wrap;   
+    }
+
+    .project-image {
+        width: 33rem;
+        height: 17.5rem;
+    }
+
+    
+
 }
 
 .project
@@ -936,7 +960,7 @@ li
 {
     max-width: min-content;
     display: flex;
-    flex-direction: row;
+    
     gap: 1.8rem;
     justify-content: center;
     margin-top: 2rem;
@@ -1016,6 +1040,28 @@ li
     top: -55px;
 }
 
+@media (max-width:768px) {
+
+    .achievement-content {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        top: -420px;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    
+
+    .contact-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 .achieve
 {
     margin-top: 15rem;
@@ -1026,7 +1072,7 @@ li
 
 .box1
 {
-    width: 14rem;
+   
     height: 7.5rem;
     display: flex;
     flex-direction: column;
@@ -1135,7 +1181,6 @@ li
 .contact-buttons
 {
     display: flex;
-    flex-direction: row;
     gap: 2rem;
     justify-content: center;
 }
