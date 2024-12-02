@@ -58,11 +58,12 @@ li
     width: 93vw;
     margin: 0 auto;
     background-color: var(--black);
-    transition: 0.1s ease-in-out;
+    transition: all 0.3s ease 0s;
     z-index: 10000;
     justify-content:space-between;
     padding-right: 2.1rem;
-    animation: scrollDown 0.2s forwards;
+    animation: scrollDown 0.5s forwards;
+
 }
 
 @keyframes scrollDown {
@@ -79,7 +80,7 @@ li
 .header-section
 {
     height: 4.4rem;
-    transition: all 0.3s ease-in-out;
+    
 }
 
 .menu-check
@@ -241,11 +242,6 @@ li
     .characterImage {
        display: none;  
     }
-    .homeImg
-    {
-        /* position: relative; */
-    }
-
     .home-section
     {
         background-image: url('images/about-me.png');
@@ -258,7 +254,20 @@ li
         background-position: right left;
         background-size: contain;
         opacity: 90%;
-        
+        animation: scrollUp-in 1.9s forwards;
+        transition: all 1.1s ease 1.7s;
+        position: relative;
+    }
+
+    @keyframes scrollUp-in {
+
+        from {
+            top: 450px;
+        }
+        to {
+            top: 21px;
+        }
+            
     }
 
     .home-content {
@@ -272,6 +281,7 @@ li
 
     .about-section {
         padding-top: 6rem;
+        flex-direction: column;
     }
 
     .work-text {
@@ -285,6 +295,24 @@ li
         font-weight: 600;
     }
 
+}
+
+.characterImage
+{
+        position: relative;
+        animation: scrollUp 1.9s forwards;
+        transition: all 1s ease 1.5s;
+}
+
+@keyframes scrollUp {
+
+    from {
+        top: 200px;
+    }
+    to {
+        top: 0;
+    }
+        
 }
 
 
@@ -707,9 +735,10 @@ li
 .experience-content
 {
     display: flex;
-    flex-direction: row;
+    
     gap: 1.7rem;
     margin-bottom: 5rem;
+    
 }
 
 .education-content-lower {
@@ -733,6 +762,7 @@ li
     background-color: var(--background);;
     border-radius: 0.5rem;
     padding: 2.7rem 1.5rem;
+    width: 50%;
 }
 
 .experience-right-content
@@ -740,6 +770,7 @@ li
     background-color: var(--background);;
     border-radius: 0.5rem;
     padding: 2.7rem 1.5rem;
+    
 }
 
 .experience-bottom-content ul li
