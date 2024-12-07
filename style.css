@@ -280,7 +280,6 @@ li
     }
 
     .about-section {
-        padding-top: 6rem;
         flex-direction: column;
     }
 
@@ -564,7 +563,6 @@ li
 .about-section
 {
     display: flex;
-    flex-direction: row;
     gap: 2rem;
     padding-top: 7rem;
     animation: slideFromLeft 0.9s ease forwards;
@@ -770,6 +768,7 @@ li
     background-color: var(--background);;
     border-radius: 0.5rem;
     padding: 2.7rem 1.5rem;
+    width: 50%;
     
 }
 
