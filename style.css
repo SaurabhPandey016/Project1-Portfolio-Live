@@ -959,6 +959,13 @@ li
     gap:1.8rem;
 }
 
+@media (max-width:654px) {
+    .project-image {
+        width:auto;
+    }
+}
+
+
 @media (max-width:1025px) {
 
     .project-matter1 {
