@@ -956,13 +956,20 @@ li
 {
     max-width: min-content;
     display: flex;
-    
     gap:1.8rem;
 }
 
-@media (max-width:654px) {
+@media ((min-width:0px) and (max-width:654px)) {
     .project-image {
-        width:auto;
+        width:23.8rem;
+        height: 11.6rem;
+    }
+}
+
+@media ((min-width:655px) and (max-width:1025px)) {
+    .project-image {
+        width: 33rem;
+        height: 17.5rem;
     }
 }
 
@@ -980,10 +987,6 @@ li
         flex-wrap: wrap;   
     }
 
-    .project-image {
-        width: 33rem;
-        height: 17.5rem;
-    }
 
     .right-div
     {
