@@ -444,7 +444,9 @@ li
     width: 7.6rem;
     background-color: var(--primary-color);
     color: var(--black);
-    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 0.73rem;
+    
 
 }
 
@@ -453,7 +455,7 @@ li
     font-size: 0.73rem;
     
     color: var(--black);
-    letter-spacing: 2px;
+    
 
 }
 
@@ -479,7 +481,8 @@ li
     height: 3.2rem;
     width: 7.6rem;
     background-color: var(--black);
-    cursor: pointer;
+    font-size: 0.73rem;
+    letter-spacing: 2px;
 
 }
 
@@ -970,6 +973,9 @@ li
     cursor: pointer;
 
 }
+
+
+
 
 .project-para
 {
