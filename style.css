@@ -453,7 +453,7 @@ li
 .profile-button1 a
 {
     font-size: 0.73rem;
-    
+    z-index: 999999;
     color: var(--black);
     
 
@@ -463,7 +463,7 @@ li
 .profile-button2 a
 {
     font-size: 0.73rem;
-    
+    z-index: 999999;
     color: white;
     letter-spacing: 2px;
 

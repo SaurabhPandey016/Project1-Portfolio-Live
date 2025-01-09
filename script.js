@@ -9,7 +9,7 @@ const headScroll = document.querySelectorAll(".header-section");
 
 // write an auto type function which will display Several cards;
 // agr ek b space daale tm mto sb khb hojyega;
-const typeList = ["Web-Developer","Frontend-Engineer", "Freelancer",  ];
+const typeList = ["Web-Developer","Frontend-Developer", "Freelancer"];
 
 
 function autoType(wordArray, element) {
