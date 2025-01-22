@@ -11,7 +11,10 @@ const headScroll = document.querySelectorAll(".header-section");
 // agr ek b space daale tm mto sb khb hojyega;
 const typeList = ["Web-Developer","Frontend-Developer", "Freelancer"];
 
+// now we'll call That Function passing the arguments;
+autoType(typeList, spanText);
 
+// reusable function
 function autoType(wordArray, element) {
 
     let charIndex = 0;
@@ -67,8 +70,7 @@ function autoType(wordArray, element) {
 
 }
 
-  // now we'll call That Function passing the arguments;
-  autoType(typeList, spanText);
+  
 
 
 // mera likha code abi ka
