@@ -1,0 +1,474 @@
+/* *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'poppins', sans-serif;
+
+} */
+
+*:root{
+
+    --light-color-portfolio:#ffe7b7;
+    --primary-color-portfolio:  #ffbd39;
+    --primary-color:rgb(40, 141, 40);
+    --background-color: rgb(230, 250, 230);
+    --brown : rgb(130, 72, 30);
+    --black:black;
+    --red: rgb(237, 100, 100);
+    --border-color: rgb(220, 216, 216);
+    --light-grey:rgb(196, 189, 189);
+    --text-color:rgb(145, 139, 139);
+
+}
+
+
+
+.content-container
+{
+    padding-top: 2rem;
+    /* padding-bottom: 1rem; */
+    /* background-color: aqua; */
+    max-width: 37%;
+    margin: 0 auto;
+}
+
+.heading
+{
+    text-align: center;
+}
+
+.heading
+{
+    color: var(--primary-color);
+}
+.span-head
+{
+    color: var(--brown);
+}
+
+.heading-container
+{
+    margin-bottom: 0.5rem;
+}
+.body-container
+{
+    height: auto;
+    width: 75%;
+    background-color: var(--black);
+    padding: 1.4rem;
+}
+
+.body-text
+{
+    display:flex;
+    align-items: center;
+}
+
+.body-head
+{
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+/* .body-logo
+{
+    height: 4rem;
+    width: 4rem;
+} */
+
+.body-heading {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.body-logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.progress-container
+{
+    display: flex;
+    /* gap: 0.5rem; */
+    flex-direction: column;
+    /* margin-bottom: 1rem; */
+    /* position: static; */
+    margin-bottom: 0.2rem;
+    
+}
+
+.text-progress
+{
+    font-size: 0.8rem;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+.progress-text
+{
+    margin-bottom: 0.7rem;
+}
+
+
+
+.progress-bar
+{
+    width: 100%;
+    height: 1.5rem;
+    background-color:var(--light-color-portfolio);
+    border-radius: 1.5rem;
+    /* margin-top: 0.7rem; */
+    /* padding: 0.5rem; */
+    
+}
+
+
+.progress-in
+{
+    height: 100%;
+    width: 0%;
+    background-color: var(--primary-color-portfolio);
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    align-items:center ;
+    color: white;
+    font-size: 0.4rem;
+    /* padding-left: 1rem; */
+    /* display: block; */
+    transition: all 0.3s ease-in-out;
+    border-radius: 1.5rem;
+}
+
+.para-progress
+{
+    font-size: 0.5rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    min-width: max-content;
+}
+
+.error-label
+{
+    color: var(--primary-color-portfolio);
+    text-decoration: underline;
+    font-size: 0.7rem;
+    display: none;
+    padding-left: 0.4rem;
+    margin: 0;
+    
+    
+    margin-bottom: 1rem;
+    /* margin-top: 1.5rem; */
+
+}
+
+.show-error .error-label
+{
+    display: block;
+    position: absolute;
+    overflow-y: hidden;
+
+}
+
+.goals-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    /* position: absolute; */
+}
+
+.goal
+{
+    display: flex;
+    align-items:center ;
+    flex-direction: row;
+    height: 3.65rem;
+    margin-top: 4px;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+
+}
+
+
+/* this class been added when we click on our checkbox */
+.completed .check-box
+{
+    background-color: var(--primary-color-portfolio);
+    border: black;
+    
+}
+
+
+/* you should leave an emplty space before writing a child
+    example 
+        .completed.check-box --> no space wont work
+
+        but -> 
+        .completed .check-box --> one space then child name will work
+    }
+*/
+
+.completed .check
+{
+    display: block;
+}
+
+.check-box 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    flex-shrink: 0;
+
+}
+
+
+.check
+{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: none;
+}
+
+.completed .input-write {
+    color: var(--primary-color-portfolio);
+}
+
+
+.input-write
+{
+    padding-left: 2rem;
+    height: 100%;
+    outline:none;
+    border: none;
+    /* flex-grow: 1; */
+    /* background-color: white; */
+    background-color: black;
+    align-self: stretch;
+    font-family: inherit;
+    color: var(--text-color);
+    font-size: x-small;
+    width:79%;
+}
+
+
+.input-write::placeholder
+{
+    color:var(--light-grey);
+}
+
+.goal-text{
+    height: 100%;
+}
+
+.goal-text
+{
+    display: none;
+}
+
+.footer-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    text-align: center;
+}
+
+.footer-text1
+{
+    font-weight: 600; 
+    font-size:0.85rem;
+}
+
+
+.lastText
+{
+    font-size: 0.6rem;
+    color: var(--light-grey);
+    text-align: center;
+}
+
+@media ((min-width:100px) and (max-width: 412px)) {
+    .input-write
+    {
+        padding-left: 0.3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .lastText
+    {
+        font-size: 0.45rem;
+    }
+    .text-progress
+    {
+        font-size: 0.7rem;
+    }
+
+    /* .input-write
+    {
+        padding-left: 0.8rem;
+    } */
+
+    .content-container
+    {
+        padding-top: 0.7rem;
+    }
+
+    .heading
+    {
+        font-size: 1.7rem;
+        color: var(--primary-color);
+    }
+
+    .content-container
+    {
+        padding-top: 0.6rem;
+        /* padding-bottom: 1rem; */
+        /* background-color: aqua; */
+        max-width: 45%;
+        margin: 0 auto;
+    }
+    .body-head {
+        font-size: 1.3rem;
+        font-weight: 700;
+        
+    }
+
+    .body-heading {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.4rem;
+        color: var(--primary-color-portfolio);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .error-label {
+
+        color: var(--primary-color-portfolio);
+        text-decoration: underline;
+        font-size: 0.62rem;
+        display: none;
+        padding-left: 0.3rem;
+        /* margin: 0; */
+        /* margin-bottom: 1rem; */
+        /* margin-top: 1.5rem; */
+    }
+    .progress-bar {
+        width: 100%;
+        height: 1.5rem;
+        background-color: var(--background-color);
+        border-radius: 1.5rem;
+        /* margin-top: 0.7rem; */
+        /* padding: 0.5rem; */
+        margin-bottom: 0.4rem;
+    }
+    .body-container {
+        height: auto;
+        width: 75%;
+        padding: 1.18rem;
+    }
+    .goals-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        /* position: absolute; */
+    }
+}
+
+@media (max-width:591px) {
+    .footer-text1
+    {
+        font-size:0.7rem;
+    }
+    .heading {
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media((min-width:466px) and (max-width:600px)) {
+    .content-container {
+        padding-top: 1rem;
+       
+        max-width: 54%;
+        margin: 0 auto;
+    }
+}
+
+@media((min-width:0px) and (max-width:465px)) {
+    .content-container {
+        padding-top: 1rem;
+       
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .content-container {
+        padding-top: 1rem;
+        /* padding-bottom: 1rem; */
+        /* background-color: aqua; */
+        max-width: 47%;
+        margin: 0 auto;
+    }
+
+    .goals-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        margin-bottom: 1.6rem;
+        margin-top: 1.7rem;
+        /* position: absolute; */
+    }
+
+    .body-container {
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+@media (min-width:987px) {
+    .content-container {
+        padding-top: 1.8rem;
+        /* padding-bottom: 1rem; */
+        /* background-color: aqua; */
+        max-width: 37%;
+        margin: 0 auto;
+    }
+}
+

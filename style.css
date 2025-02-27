@@ -16,7 +16,7 @@ body
 
 :root{
 
-    --primary-color:  #ffbd39;
+    --primary-color-portfolio:  #ffbd39;
     --secondary-color: #a0f669;
     --darken:#232931;
     --black:#000000;
@@ -184,7 +184,7 @@ li
 }    */
 
 /* .nav-link li a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
     
     transition: all 0.19s ease-in-out;
     
@@ -204,7 +204,7 @@ li
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color:var(--primary-color);
+    background-color:var(--primary-color-portfolio);
     /* yha pe transform origin ka mtlb ni qki wo hover pe effect pe ayegi */
     transition: transform 0.38s ease; 
     transform: scaleX(0);
@@ -244,16 +244,19 @@ li
     }
     .home-section
     {
-        background-image: url('images/about-me.png');
+        
         background-size: cover;
         /* background-repeat: no-repeat; */
-        width: 100%;
+        /* width: 100%; */
         z-index: -9999;
         margin-top: 10rem;
         padding-top: 10rem;
         background-position: right left;
         background-size: contain;
+        background-image: url('images/about-me.png');
+        background-position: right left;
         opacity: 90%;
+        background-size: contain;
         animation: scrollUp-in 1.9s forwards;
         transition: all 1.1s ease 1.7s;
         position: relative;
@@ -271,6 +274,7 @@ li
     }
 
     .home-content {
+       
         align-items: center;
         width: 100%;
         gap: 0rem;
@@ -284,13 +288,13 @@ li
     }
 
     .work-text {
-        color: var(--primary-color);
+        color: var(--primary-color-portfolio);
         font-weight: 700;
     }
 
     .span-type
     {
-        color: var(--primary-color);
+        color: var(--primary-color-portfolio);
         font-weight: 600;
     }
 
@@ -369,7 +373,7 @@ li
 
 .greet-text
 {
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
     font-size: 0.80rem;
     font-weight: 600;
     letter-spacing: 4px;
@@ -385,7 +389,7 @@ li
 {
     font-size: 3.7em;
     font-weight: 900;
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
     letter-spacing: 1px;
 
 }
@@ -442,7 +446,7 @@ li
     border-radius: 2.5rem;
     height: 3.2rem;
     width: 7.6rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
     color: var(--black);
     letter-spacing: 2px;
     font-size: 0.73rem;
@@ -565,6 +569,7 @@ li
 .about-section
 {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     padding-top: 7rem;
     animation: slideFromLeft 0.9s ease forwards;
@@ -596,7 +601,7 @@ li
     gap: 0.6rem;
 }
 
-.progress-bar
+.progress-bar-portfolio
 {
     background-color: var(--darken);
     width: 100%;
@@ -606,31 +611,31 @@ li
 .skill1 .raise-bar {
     width: 85%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
 }
 
 .skill2 .raise-bar {
     width: 80%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
 }
 
 .skill3 .raise-bar {
     width: 75%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
 }
 
 .skill4 .raise-bar {
     width: 70%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
 }
 
 .skill5 .raise-bar {
     width: 75%;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
 }
 
 
@@ -649,7 +654,7 @@ li
 }
 
 .project-count-span {
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
 }
 
 .project-count-button 
@@ -663,7 +668,7 @@ li
     border-radius: 2.5rem;
     height: 3.2rem;
     width: 7.6rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
     color: var(--black);
     font-weight: 600;
     cursor: pointer;
@@ -762,7 +767,7 @@ li
 .experience-line
 {
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
     height: 3px;
     margin-bottom: 2rem;
 }
@@ -855,7 +860,7 @@ li
 {
     font-weight: 900;
     font-size: 26px;
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
 }
 .text2
 {
@@ -888,7 +893,7 @@ li
     border-radius: 2.5rem;
     height: 4.2rem;
     width: 12.6rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
     color: var(--black);
     font-weight: 600;
     cursor: pointer;
@@ -969,7 +974,7 @@ li
 
 .project-description-para:hover
 {
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
     cursor: pointer;
 
 }
@@ -1085,7 +1090,7 @@ li
     }
 
 
-    .right-div
+    .right-div-portfolio
     {
         width: 100%;
         margin-left: auto;
@@ -1142,7 +1147,7 @@ li
     border-radius: 2.5rem;
     height: 4.2rem;
     width: 12.6rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-portfolio);
     color: var(--black);
     font-weight: 600;
     cursor: pointer;
@@ -1161,7 +1166,7 @@ li
 {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
 
 }
 
@@ -1242,7 +1247,7 @@ li
 {
     font-size: 1.6rem;
     font-weight: 800;
-    color: var(--primary-color);
+    color: var(--primary-color-portfolio);
     
 }
 .box1-span
@@ -1251,7 +1256,12 @@ li
 }
 
 
-/* next section */
+/* Contact Section */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
 
 .contact-content
 {
